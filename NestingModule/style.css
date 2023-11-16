@@ -1,0 +1,23 @@
+/* old */
+/* .parent {
+    color: red;
+}
+.parent .child {
+    color: gray;
+}
+.parent .child span {
+    color: green;
+} */
+/* new using Nesting Module */
+.parent {
+    color: red;
+    .child {
+        color: gray;
+        & span {
+            color: green;
+        }
+        &:hover span {
+            font-weight: bold;
+        }
+    }
+}
